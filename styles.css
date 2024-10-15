@@ -24,7 +24,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--sans);
-  background-color: var(--plum);
+  background-color: var(--black);
   color: var(--white);
   font-size: var(--font-size);
 }
@@ -39,6 +39,12 @@ a {
 a:hover {
   color: var(--hotmag);
   text-decoration: none;
+}
+
+/* intro styles */
+
+#intro {
+  padding-bottom: 10rem;
 }
 #intro p {
   font-size: 1rem;
@@ -57,69 +63,50 @@ a:hover {
   font-size: 4rem;
   font-weight: normal;
 }
+
+/* contact section */
+
 #contact {
   width: 400px;
   text-align: center;
   margin: 0 auto;
   padding: 3rem 0;
+  background-color: var(--plum);
+  color: var(--white);
 }
 #contact p:last-child {
   margin-top: 3rem;
 }
+
+/* nav bar */
+
 nav {
   font-family: var(--mono);
   font-size: 80%;
-}
-nav li:first-child {
-  flex-basis: 100%;
-  text-align: center;
-}
-nav [class*='fa-'] {
-  font-size: 150%;
-  color: var(--aqua);
-}
-nav h1 [class*='fa-'] {
-  font-size: 20px;
-  color: var(--aqua);
+  padding: 1rem;
 }
 nav h1 a {
   font-family: var(--sans);
-  flex-basis: 100%;
 }
 nav ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
 nav a {
+  color: var(--white);
   text-decoration: none;
-  color: white;
   display: block;
 }
-nav a:hover,
-nav [class*='fa-']:hover {
-  color: blue;
-}
-.button {
-  background-color: magenta;
-  padding: 0.4rem;
-  border-radius: 5px;
-}
-nav .button:hover {
-  color: var(--white);
-  background-color: blue;
-}
-@media (min-width: 850px) {
-  nav {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  nav li:first-child {
-    flex-basis: auto;
-    text-align: left;
-    margin-right: auto;
-  }
+nav a:hover {
+  color: var(--magenta);
 }
